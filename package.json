@@ -1,0 +1,20 @@
+{
+  "name": "api-errors",
+  "version": "0.0.2",
+  "description": "Cumulative List of Styfi Api Errors",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://aditya-joshi@bitbucket.org/stylabs/api-errors.git"
+  },
+  "author": "aditya-joshi",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/stylabs/api-errors#readme",
+  "dependencies": {
+    "lodash": "^4.17.4",
+    "util": "^0.10.3"
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "VALIDATION": {
+    "MOBILE": {
+      "code": 1000,
+      "type": "MOBILE_VALIDATION",
+      "message": "Invalid Mobile Number"
+    },
+    "EMAIL": {
+      "code": 1001,
+      "type": "EMAIL_VALIDATION",
+      "message": "Invalid Email"
+    },
+    "FIRST_NAME": {
+      "code": 1002,
+      "type": "FIRST_NAME_VALIDATION",
+      "message": "Invalid First Name"
+    },
+    "LAST_NAME": {
+      "code": 1003,
+      "type": "LAST_NAME_VALIDATION",
+      "message": "Invalid Last Name"
+    },
+    "PASSWORD": {
+      "code": 1004,
+      "type": "PASSWORD_VALIDATION",
+      "message": "Invalid Password"
+    },
+    "GENDER": {
+      "code": 1005,
+      "type": "GENDER_VALIDATION",
+      "message": "Invalid Gender"
+    },
+    "INVALID_OTP": {
+      "code": 1006,
+      "type": "OTP_VALIDATION",
+      "message": "You seem to have entered an incorrect or expired OTP. Hit resend for a new one."
+    },
+    "EXPIRE_OTP": {
+      "code": 1007,
+      "type": "OTP_EXPIRE_VALIDATION",
+      "message": "Your OTP has expired. Hit resend for a different OTP."
+    },
+    "INVALID_CREDENTIAL": {
+      "code": 1008,
+      "type": "INVALID_CREDENTIAL",
+      "message": "Invalid Credential"
+    }
+  },
+  "DUPLICATE": {
+    "MOBILE": {
+      "code": 4000,
+      "type": "DUPLICATE_MOBILE",
+      "message": "Mobile Already Exists"
+    },
+    "EMAIL": {
+      "code": 4001,
+      "type": "DUPLICATE_EMAIL",
+      "message": "Email Already Exists"
+    }
+  },
+  "TYPE": {
+    "code": 2000,
+    "type": "TYPE"
+  },
+  "INTEGRITY": {
+    "code": 3000,
+    "type": "INTEGRITY"
+  },
+  "UNAUTHORIZED": {
+    "NOT_AUTHENTICATED": {
+      "code": 5000,
+      "type": "AUTHENTICATION",
+      "message": "Authentication Required to perform this action"
+    },
+    "FORBIDDEN": {
+      "code": 5001,
+      "type": "AUTHORIZATION",
+      "message": "You are not authorized to perform this action"
+    },
+    "OTP_REQUEST_THRESHOLD": {
+      "code": 5002,
+      "type": "AUTHORIZATION",
+      "message": "Your mobile number has been blocked for 15 mins. You may try again with another number."
+    },
+    "OTP_REQUEST_BLOCKED": {
+      "code": 5003,
+      "type": "AUTHORIZATION",
+      "message": "We seem to be facing an internal error. Use a different mobile number, or try again later."
+    }
+  },
+  "REQUIRED_FIELD": {
+    "code": 6000,
+    "type": "REQUIRED_FIELD"
+  },
+  "REQUIRED_PARAM": {
+    "code": 7000,
+    "type": "REQUIRED_PARAM"
+  },
+  "NOT_FOUND": {
+    "code": 8000,
+    "type": "ENTITY_NOT_FOUND"
+  }
+}
