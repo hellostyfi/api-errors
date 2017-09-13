@@ -20,19 +20,22 @@ function ErrorSubModule(subModuleName, errors){
         this.clazz = "APIError";
     }
     this.errors = {};
+    this.redundancy = [];
     this.init(errors);
 }
 
 ErrorSubModule.prototype.init = function(errors){
     if(!_.isObject(errors) && !_.keys(errors).length > 0){
-        return new Error(errors + " should be of type object and should contain at least one key");
+        throw new Error(errors + " should be of type object and should contain at least one key");
     }
     _.forOwn(errors, function (value, key) {
         if(!_.isObject(value) && !_.has(value, ['code', 'type'])){
-            return new Error(value + " should be of type object and should contain code and type");
+            throw new Error(value + " should be of type object and should contain code and type");
         }
         const errorKey = allCaps(key);
         const errorType = value.type || errorKey + "_" + this.name;
+
+        this.redundancy.push(value.code);
 
         this.errors[errorKey] = new ERROR_MODELS[this.clazz](value.code, errorType , value.message);
 
