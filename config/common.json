@@ -1,0 +1,34 @@
+{
+  "TYPE": {
+    "INVALID": {
+      "code": 2000,
+      "type": "TYPE"
+    }
+  },
+  "INTEGRITY": {
+    "MOBILE": {
+      "code": 3000,
+      "type": "MOBILE_INTEGRITY"
+    },
+    "EMAIL":{
+      "code": 3001,
+      "type": "EMAIL_INTEGRITY"
+    }
+  },
+  "REQUIRED": {
+    "FIELD": {
+      "code": 6000,
+      "type": "REQUIRED_FIELD"
+    },
+    "PARAM": {
+      "code": 7000,
+      "type": "REQUIRED_PARAM"
+    }
+  },
+  "NOT_FOUND": {
+    "ENTITY": {
+      "code": 8000,
+      "type": "ENTITY_NOT_FOUND"
+    }
+  }
+}

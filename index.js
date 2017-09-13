@@ -6,4 +6,6 @@ var builder = require('./error-module/module-builder');
 
 const errorModules = builder.build();
 
-module.exports.ERRORS = errorModules;
+module.exports.Errors = errorModules;
+
+module.exports.Models = require('./error-module/error');
