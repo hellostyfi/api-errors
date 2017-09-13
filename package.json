@@ -1,6 +1,6 @@
 {
   "name": "styfi-api-errors",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Cumulative List of Styfi Api Errors",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://aditya-joshi@bitbucket.org/stylabs/api-errors.git"
+    "url": "git+https://bitbucket.org/stylabs/api-errors.git"
   },
   "author": "aditya-joshi",
   "license": "ISC",
