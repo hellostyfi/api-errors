@@ -12,12 +12,13 @@ function allCaps(str){
 function ErrorModule(moduleName, subModules){
     this.name = allCaps(moduleName);
     this.subModules = [];
+    this.redundancy = [];
     this.init(subModules);
 }
 
 ErrorModule.prototype.init = function(subModules){
     if(!_.isObject(subModules) && !_.keys(subModules).length > 0){
-        return new Error(subModules + " should be of type object and should contain at least one key");
+        throw new Error(subModules + " should be of type object and should contain at least one key");
     }
     _.forOwn(subModules, function(value, key){
         const subModuleKey = allCaps(key);
@@ -28,9 +29,12 @@ ErrorModule.prototype.init = function(subModules){
 ErrorModule.prototype.build = function(){
     const submodules = {};
     const module = {};
+
     _.forEach(this.subModules, function(subModule){
+        this.redundancy = this.redundancy.concat(subModule.redundancy);
         _.assign(submodules, subModule.build());
-    });
+    }.bind(this));
+
     module[this.name] = submodules;
     return module;
 };

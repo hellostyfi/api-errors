@@ -57,47 +57,5 @@
       "type": "DUPLICATE_EMAIL",
       "message": "Email Already Exists"
     }
-  },
-  "TYPE": {
-    "code": 2000,
-    "type": "TYPE"
-  },
-  "INTEGRITY": {
-    "code": 3000,
-    "type": "INTEGRITY"
-  },
-  "UNAUTHORIZED": {
-    "NOT_AUTHENTICATED": {
-      "code": 5000,
-      "type": "AUTHENTICATION",
-      "message": "Authentication Required to perform this action"
-    },
-    "FORBIDDEN": {
-      "code": 5001,
-      "type": "AUTHORIZATION",
-      "message": "You are not authorized to perform this action"
-    },
-    "OTP_REQUEST_THRESHOLD": {
-      "code": 5002,
-      "type": "AUTHORIZATION",
-      "message": "Your mobile number has been blocked for 15 mins. You may try again with another number."
-    },
-    "OTP_REQUEST_BLOCKED": {
-      "code": 5003,
-      "type": "AUTHORIZATION",
-      "message": "We seem to be facing an internal error. Use a different mobile number, or try again later."
-    }
-  },
-  "REQUIRED_FIELD": {
-    "code": 6000,
-    "type": "REQUIRED_FIELD"
-  },
-  "REQUIRED_PARAM": {
-    "code": 7000,
-    "type": "REQUIRED_PARAM"
-  },
-  "NOT_FOUND": {
-    "code": 8000,
-    "type": "ENTITY_NOT_FOUND"
   }
 }
