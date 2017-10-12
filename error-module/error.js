@@ -51,12 +51,12 @@ function AuthenticationError(code, type, message) {
 
 inherits(AuthenticationError, APIError);
 
-function Required(code, type){
+function RequiredError(code, type){
     APIError.call(this, code,type);
     this.field = null;
 }
 
-inherits(Required, APIError);
+inherits(RequiredError, APIError);
 
 function NotFoundError(code, type, message, entity_id, entity_type){
     APIError.call(this, code,type);
@@ -74,6 +74,6 @@ module.exports = {
     DuplicateError: DuplicateError,
     AuthenticationError: AuthenticationError,
     AuthorizationError: AuthorizationError,
-    Required: Required,
+    RequiredError: RequiredError,
     NotFoundError: NotFoundError
 };
