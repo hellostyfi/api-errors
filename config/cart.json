@@ -15,7 +15,12 @@
     "PRODUCT": {
       "code": 4002,
       "type": "DUPLICATE_PRODUCT",
-      "message": "Product already added"
+      "message": "Products added to cart must be unique"
+    },
+    "CUSTOMER": {
+      "code": 4003,
+      "type": "DUPLICATE_CUSTOMER",
+      "message": "Customer is already associated with a different cart"
     }
   }
 }
