@@ -1,0 +1,21 @@
+{
+  "VALIDATION":{
+    "ID": {
+      "code": 1009,
+      "type": "CART_ID_VALIDATION",
+      "message": "Invalid cart_id"
+    },
+    "PRODUCT": {
+      "code": 1010,
+      "type": "PRODUCT_VALIDATION",
+      "message": "Invalid product"
+    }
+  },
+  "DUPLICATE":{
+    "PRODUCT": {
+      "code": 4002,
+      "type": "DUPLICATE_PRODUCT",
+      "message": "Product already added"
+    }
+  }
+}
