@@ -1,6 +1,6 @@
 {
   "name": "styfi-api-errors",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "Cumulative List of Styfi Api Errors",
   "main": "index.js",
   "scripts": {
