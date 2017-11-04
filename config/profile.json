@@ -1,0 +1,9 @@
+{
+  "DUPLICATE": {
+    "WISHLIST":{
+      "code": 4004,
+      "type": "DUPLICATE_WISHLIST_PRODUCT",
+      "message": "Product already wishlisted"
+    }
+  }
+}
