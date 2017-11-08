@@ -25,6 +25,11 @@
       "type": "PASSWORD_VALIDATION",
       "message": "Invalid Password"
     },
+    "OLD_PASSWORD": {
+      "code": 1011,
+      "type": "OLD_PASSWORD_VALIDATION",
+      "message": "Incorrect old password"
+    },
     "GENDER": {
       "code": 1005,
       "type": "GENDER_VALIDATION",
