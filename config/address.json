@@ -1,0 +1,24 @@
+{
+  "VALIDATION":{
+    "NAME": {
+      "code": 1012,
+      "type": "ADDRESS_NAME_VALIDATION",
+      "message": "Name must be alphabets only"
+    },
+    "LINE": {
+      "code": 1013,
+      "type": "ADDRESS_LINE_VALIDATION",
+      "message": "Only Alphanumeric characters and '-/,+|:()' allowed for address line"
+    },
+    "PINCODE": {
+      "code": 1014,
+      "type": "ADDRESS_PINCODE_VALIDATION",
+      "message": "Invalid pincode"
+    },
+    "LANDMARK": {
+      "code": 1015,
+      "type": "ADDRESS_LANDMARK_VALIDATION",
+      "message": "Only Alphanumeric characters and '-/,+|:()' allowed for landmark"
+    }
+  }
+}
