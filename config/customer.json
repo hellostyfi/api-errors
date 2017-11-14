@@ -23,7 +23,7 @@
     "PASSWORD": {
       "code": 1004,
       "type": "PASSWORD_VALIDATION",
-      "message": "Invalid Password"
+      "message": "Invalid Password. Must be at least 8 characters"
     },
     "OLD_PASSWORD": {
       "code": 1011,
@@ -34,6 +34,11 @@
       "code": 1005,
       "type": "GENDER_VALIDATION",
       "message": "Invalid Gender"
+    },
+    "DOB":{
+      "code": 1016,
+      "type": "DOB_VALIDATION",
+      "message": "Invalid Date of birth. Should be in YYYY-MM-DD format"
     },
     "INVALID_OTP": {
       "code": 1006,
